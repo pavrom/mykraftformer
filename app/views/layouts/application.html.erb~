@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mykraftformer</title>
+  <title>ECKOLD Kraftformer</title>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <% if request.ssl? %>
     <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' %>
@@ -18,7 +18,8 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-6">
-        <h1><%= link_to "My Store", root_path %></h1>
+        <%= image_tag("Logo-Eckold.png", size: "150x150") %> 
+        <h1><%= link_to "ECKOLD Kraftformer", root_path %></h1>
       </div>
       <div class="col-xs-6 text-right">
         <h1 class="cart-text"><%= render 'layouts/cart_text' %></h1>
